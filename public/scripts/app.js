@@ -11,7 +11,7 @@ confirmation if creator want to delete any entry*/
         console.log("App Started");
 
         // Select all elements with the class 'btn-danger' and store them in deleteButtons.
-        /*let deleteButtons = document.querySelectorAll('.btn-danger');
+        let deleteButtons = document.querySelectorAll('.btn-danger');
 
         // Iterate through each delete button and attach a click event listener.
         for(button of deleteButtons)
@@ -22,10 +22,10 @@ confirmation if creator want to delete any entry*/
                 if(!confirm("ARE YOU SURE?"))
                 {
                     event.preventDefault();
-                    window.location.assign('/course-list');
+                    window.location.assign('/event-list');
                 }
             })
-        }*/
+        }
     }
 
     // Add an event listener to execute the Start function when the window has finished loading.
