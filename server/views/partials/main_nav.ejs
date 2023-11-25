@@ -1,17 +1,23 @@
 <!--NavBar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
+        <!-- Brand logo and name -->
         <a class="navbar-brand" href="/">Intro to Annlita</a>
+
+        <!-- Navbar Toggler for mobile view -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navbar Links Container -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar Links List -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                
-                <!-- Home Page Link for Navigation-->
+                <!-- Home Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Home") { %>
+                        <!-- Add 'active' class if the current page is Home -->
                         <a class="nav-link active" href="/home">
                     <% } else { %>
                         <a class="nav-link" href="/home">
@@ -19,8 +25,10 @@
                         <i class="fa-solid fa-house"></i> Home</a>
                 </li>
 
+                <!-- Faculties Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Faculties") { %>
+                        <!-- Add 'active' class if the current page is Faculties -->
                         <a class="nav-link" href="/faculties">
                     <% } else { %>
                         <a class="nav-link" href="/faculties">
@@ -28,8 +36,10 @@
                         <i class="fa-solid fa-user"></i> Faculties</a>
                 </li>
 
+                <!-- Events Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Events") { %>
+                        <!-- Add 'active' class if the current page is Events -->
                         <a class="nav-link" href="/events-list">
                     <% } else { %>
                         <a class="nav-link" href="/events-list">
@@ -37,8 +47,10 @@
                         <i class="fa-solid fa-rocket"></i> Events</a>
                 </li>
 
+                <!-- Feedback Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Feedback") { %>
+                        <!-- Add 'active' class if the current page is Feedback -->
                         <a class="nav-link" href="/experience-list">
                     <% } else { %>
                         <a class="nav-link" href="/feedback">

@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" type="text/css" href="views/feedback.css">
+    
+    <!-- Title of the document -->
     <title>Feedback Form</title>
 </head>
+
 <body>
-    
+    <!-- Feedback Form -->
     <form id="feedbackForm">
+        <!-- Name Input Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
+        <!-- Student ID Input Field -->
         <label for="studentId">Student ID:</label>
         <input type="text" id="studentId" name="studentId" required>
 
+        <!-- Email Input Field -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
+        <!-- Faculty Input Field -->
         <label for="faculty">Faculty:</label>
         <input type="text" id="faculty" name="faculty" required>
 
+        <!-- Question/Suggestion Textarea -->
         <label for="questionSuggestion">Question/Suggestion:</label>
         <textarea id="questionSuggestion" name="questionSuggestion" rows="4" required></textarea>
 
-        
+        <!-- Submit and Reset Buttons -->
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
     </form>
-
 </body>
+
 </html>
