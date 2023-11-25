@@ -78,15 +78,15 @@ height: 800px;
 #forms {
 text-align: center;
 float: center;
-height: 900px;
+height: 1100px;
 margin-right: 300px; 
 margin-left: 300px;
 margin-bottom: 200px;
-background: #29B7E1;
-background: -moz-linear-gradient(45deg, #6ECAE6, #114E61);
-background: -webkit-linear-gradient(45deg, #6ECAE6, #114E61);
-background: -o-linear-gradient(45deg, #6ECAE6, #114E61);
-background: linear-gradient(45deg, #6ECAE6, #114E61);
+background: #0077CA;
+background: -moz-linear-gradient(45deg, #66EBFA, #0077CA);
+background: -webkit-linear-gradient(45deg, #66EBFA, #0077CA);
+background: -o-linear-gradient(45deg, #66EBFA, #0077CA);
+background: linear-gradient(45deg, #66EBFA, #0077CA);
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 }
 
