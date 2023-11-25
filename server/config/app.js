@@ -20,7 +20,7 @@ mongoDB.once("open", () => {
 // Importing route modules
 let indexRouter = require('../routes/index'); // Routes for the root path (localhost:3000)
 let usersRouter = require('../routes/users'); // Routes for user-related paths (localhost:3000/users)
-let courseRouter = require('../routes/event'); // Routes for course-related paths (localhost:3000/course-list)
+let eventRouter = require('../routes/event'); // Routes for course-related paths (localhost:3000/course-list)
 
 // Creating an Express application
 let app = express();
@@ -41,7 +41,7 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 // Routes setup
 app.use('/', indexRouter); // Handling requests to the root path (localhost:3000)
 app.use('/users', usersRouter); // Handling requests to user-related paths (localhost:3000/users)
-app.use('/event-list', courseRouter); // Handling requests to course-related paths (localhost:3000/course-list)
+app.use('/event-list', eventRouter); // Handling requests to course-related paths (localhost:3000/course-list)
 
 // Catching 404 errors and forwarding to the error handler
 app.use(function (req, res, next) {
