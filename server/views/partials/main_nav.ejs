@@ -2,7 +2,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <!-- Brand logo and name -->
-        <a class="navbar-brand" href="/">Ontario Tech University</a>
+        <img src="assests\images\weblogo.png" alt = "Logo of UOIT" style= "width:30px; height:30px">
+        <a class="navbar-brand" href="/"> Ontario Tech University</a>
 
         <!-- Navbar Toggler for mobile view -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,33 +30,33 @@
                 <li class="nav-item">
                     <% if (title == "Faculties") { %>
                         <!-- Add 'active' class if the current page is Faculties -->
-                        <a class="nav-link" href="/faculties">
+                        <a class="nav-link active" href="/faculties">
                     <% } else { %>
                         <a class="nav-link" href="/faculties">
                     <% } %>
-                        <i class="fa-solid fa-user"></i> Faculties</a>
+                        <i class="fa-solid fa-users"></i> Faculties</a>
                 </li>
 
                 <!-- Events Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Events") { %>
                         <!-- Add 'active' class if the current page is Events -->
-                        <a class="nav-link" href="/event-list">
+                        <a class="nav-link active" href="/event-list">
                     <% } else { %>
                         <a class="nav-link" href="/event-list">
                     <% } %>
-                        <i class="fa-solid fa-rocket"></i> Events</a>
+                        <i class="fa-solid fa-calendar-days"></i> Events</a>
                 </li>
 
                 <!-- Feedback Page Link for Navigation -->
                 <li class="nav-item">
                     <% if (title == "Feedback") { %>
                         <!-- Add 'active' class if the current page is Feedback -->
-                        <a class="nav-link" href="/feedback">
+                        <a class="nav-link active" href="/feedback">
                     <% } else { %>
                         <a class="nav-link" href="/feedback">
                     <% } %>
-                        <i class="fa-solid fa-briefcase"></i> Feedback</a>
+                        <i class="fa-solid fa-message"></i> Feedback</a>
                 </li>
             </ul>
         </div>

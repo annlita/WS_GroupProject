@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <!-- Metadata for character set and viewport -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id = "forms"> <!--Defining form-->
+<form action="mailto:annlitajoshyaykara@ontariotechu.net" method="post" enctype="text/plain" name="form"> 
     
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="views/feedback.css">
-    
-    <!-- Title of the document -->
-    <title>Feedback Form</title>
-</head>
-
-<body>
     <!-- Feedback Form -->
-    <form id="feedbackForm">
         <!-- Name Input Field -->
+        <p>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required> </p>
 
         <!-- Student ID Input Field -->
-        <label for="studentId">Student ID:</label>
-        <input type="text" id="studentId" name="studentId" required>
+        <p><label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required></p>
 
         <!-- Email Input Field -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <p><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required></p>
 
         <!-- Faculty Input Field -->
-        <label for="faculty">Faculty:</label>
-        <input type="text" id="faculty" name="faculty" required>
+        <p><label for="faculty">Faculty:</label>
+        <input type="text" id="faculty" name="faculty" required></p>
 
         <!-- Question/Suggestion Textarea -->
-        <label for="questionSuggestion">Question/Suggestion:</label>
-        <textarea id="questionSuggestion" name="questionSuggestion" rows="4" required></textarea>
+        <p><label for="questionSuggestion">Question/Suggestion:</label>
+        <textarea id="questionSuggestion" name="questionSuggestion" rows="4" required></textarea></p>
 
         <!-- Submit and Reset Buttons -->
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
-</body>
+        <p><br><br><br><input type="checkbox" name="checkbox" required>
+        <label for "checkbox">I am not a robot!</label></p>
 
-</html>
+        <p><br><br><br>
+        <input type ="submit" value="Submit"/> 
+        <input type ="reset" value="Reset"/></p> 
+        <!--Submit and Reset button-->
+    </form>
+    </div>

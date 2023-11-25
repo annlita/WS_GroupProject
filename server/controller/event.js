@@ -10,7 +10,7 @@ module.exports.DislayEventlist = async (req, res, next) => {
 
         // Render the 'list' view with the retrieved Event data
         res.render('event/list', {
-            title: 'Event List',
+            title: 'Events',
             EventList: EventList
         });
     } catch (err) {
