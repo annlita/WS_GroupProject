@@ -88,6 +88,7 @@ module.exports.ProcessEditEvent = (req, res, next) => {
 
         // Create an updated Event instance with data from the form
         let updatedEvent = Event({
+            "_id":id,
             "Name": req.body.Name,
             "Time": req.body.Time,
             "Date": req.body.Date,

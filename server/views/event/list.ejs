@@ -17,19 +17,19 @@
             </tr>
             <% for(let count=0;count<EventList.length;count++) { %>    
             <tr class="d-flex">
-                <td class="text-center col-2"><%= Eventlist[count].Name %></td>
-                <td class="text-center col-2"><%= Eventlist[count].Time %></td>
-                <td class="text-center col-1"><%= Eventlist[count].Date %></td>
-                <td class="text-center col-4"><%= Eventlist[count].Location %></td>
-                <td class="text-center col-1"><%= Eventlist[count].Description %></td>
+                <td class="text-center col-2"><%= EventList[count].Name %></td>
+                <td class="text-center col-2"><%= EventList[count].Time %></td>
+                <td class="text-center col-1"><%= EventList[count].Date %></td>
+                <td class="text-center col-4"><%= EventList[count].Location %></td>
+                <td class="text-center col-1"><%= EventList[count].Description %></td>
                 <td class="text-center col-1">
-                    <a href="/eventslist/edit/<%= Eventlist[count]._id %>" 
+                    <a href="/event-list/edit/<%= EventList[count]._id %>" 
                         class="btn btn-primary btn-sm"
                         <i class="fas fa-pencil-alt"></i> Edit
                     </a>
                 </td>
                 <td class="text-center col-1">
-                    <a href="/eventslist/delete/<%= Eventlist[count]._id %>" 
+                    <a href="/event-list/delete/<%= EventList[count]._id %>" 
                         class="btn btn-danger btn-sm">
                         <i class="fas trash-alt"></i> Delete
                     </a>
