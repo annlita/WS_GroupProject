@@ -41,11 +41,12 @@ module.exports.ProcessEvent = async (req, res, next) => {
     try {
         // Create a new Event instance with data from the form
         let newEvent = Event({
-            "event_name": req.body.event_name,
-            "event_number": req.body.event_number,
-            "Prof_name": req.body.Prof_name,
+            "Name": req.body.Name,
+            "Time": req.body.Time,
+            "Date": req.body.Date,
+            "Location": req.body.Location,
             "Description": req.body.Description,
-            "intake": req.body.intake
+            
         });
 
         // Save the new event to the database and redirect to the event list
@@ -87,12 +88,11 @@ module.exports.ProcessEditEvent = (req, res, next) => {
 
         // Create an updated Event instance with data from the form
         let updatedEvent = Event({
-            "_id": id,
-            "event_name": req.body.event_name,
-            "event_number": req.body.event_number,
-            "Prof_name": req.body.Prof_name,
+            "Name": req.body.Name,
+            "Time": req.body.Time,
+            "Date": req.body.Date,
+            "Location": req.body.Location,
             "Description": req.body.Description,
-            "intake": req.body.intake
         });
 
         // Update the event in the database and redirect to the event list
