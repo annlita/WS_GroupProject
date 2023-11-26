@@ -4,11 +4,11 @@ box-sizing: border-box;
 }
 
 body {
-background: #F50701;
-background: -moz-linear-gradient(top, #F58500, #F50701);
-background: -webkit-linear-gradient(top, #F58500, #F50701);
-background: -o-linear-gradient(top, #F58500, #F50701);
-background: linear-gradient(to top, #F58500, #F50701);
+background: #F55020;
+background: -moz-linear-gradient(top, #F58500, #F55020);
+background: -webkit-linear-gradient(top, #F58500, #F55020);
+background: -o-linear-gradient(top, #F58500, #F55020);
+background: linear-gradient(to top, #F58500, #F55020);
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 margin: 0; 
 height: 1700px;
@@ -36,7 +36,7 @@ font-family: Caveat Brush, Verdana, Geneva, Arial, sans-serif;
 
 .container {
     font-family: Cambria, Verdana, Geneva, Arial, sans-serif;
-    color: #003C71;
+    color: black;
 }
 
 #left-column {
@@ -82,11 +82,11 @@ height: 1100px;
 margin-right: 300px; 
 margin-left: 300px;
 margin-bottom: 200px;
-background: #0077CA;
-background: -moz-linear-gradient(45deg, #66EBFA, #0077CA);
-background: -webkit-linear-gradient(45deg, #66EBFA, #0077CA);
-background: -o-linear-gradient(45deg, #66EBFA, #0077CA);
-background: linear-gradient(45deg, #66EBFA, #0077CA);
+background: grey;
+background: -moz-linear-gradient(45deg, silver, grey);
+background: -webkit-linear-gradient(45deg, silver, grey);
+background: -o-linear-gradient(45deg, silver, grey);
+background: linear-gradient(45deg, silver, grey);
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 }
 
@@ -113,6 +113,9 @@ margin-left:15px;
 #project1 h3{
     color: antiquewhite;
 }
+
+.navbar
+{background-color: #003C71 !important}
 
 
 header{
