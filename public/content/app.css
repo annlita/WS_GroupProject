@@ -20,13 +20,6 @@ text-align: center;
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 }
 
-a:hover{
-    color: white;   
-}
-
-#about {
-height: 800px;
-}
 
 .title {
 height: 80px;
@@ -37,36 +30,6 @@ font-family: Caveat Brush, Verdana, Geneva, Arial, sans-serif;
 .container {
     font-family: Cambria, Verdana, Geneva, Arial, sans-serif;
     color: black;
-}
-
-#left-column {
-float: left; height: 600px;
-width: 560px;
-}
-
-#right-column {
-float: right;  
-width: 800px; height: 600px;
-margin-right: 50px;
-margin-left: 0px;
-font-size: 25px;
-font-family: Caveat Brush, Verdana, Geneva, Arial, sans-serif;
-}
-
-
-#projects {
-height: 800px;
-}
-
-#project1 {
-float: center;
-text-align: center;
-margin-right: 50px;
-font-family: Caveat Brush, Verdana, Geneva, Arial, sans-serif;
-}
-
-#contact {
-height: 800px;
 }
 
 #forms {
@@ -90,9 +53,7 @@ h1,h2,h3,h4,h5,h6,li {
 margin-left:15px;
 }
 
-#right-column p {
-    color: antiquewhite;
-}
+
 #home h1{
     color: antiquewhite;
 }
@@ -102,48 +63,13 @@ margin-left:15px;
     margin-left: 5px;
     margin-right: 5px;
 }
-#project1 h1{
-    color: palevioletred;
-}
-
-#project1 h3{
-    color: antiquewhite;
-}
 
 .navbar
 {background-color: #003C71 !important}
 
 
-header{
-background: #DB0632;
-background: -moz-linear-gradient(top,#5C0315, #E14A69);
-background: -webkit-linear-gradient(top, #5C0315, #E14A69);
-background: -o-linear-gradient(top, #5C0315, #E14A69);
-background: linear-gradient(to bottom,#5C0315, #E14A69);
-font-family: Dancing Script, Verdana, Geneva, Arial, sans-serif;
-padding: 40px;
-font-size: 25px;
-text-align: center;
-}
-
-#banner h1 {
-color: white;
-}
-
 .clear {
     clear: both;
-}
-
-
-footer {
-text-align: center;
-font-family: Dancing Script, Verdana, Geneva, Arial, sans-serif;
-background: #DB0632;
-background: -moz-linear-gradient(top, #E14A69, #5C0315);
-background: -webkit-linear-gradient(top, #E14A69, #5C0315);
-background: -o-linear-gradient(top, #E14A69, #5C0315);
-background: linear-gradient(to bottom,#E14A69, #5C0315);
-padding: 10px;
 }
 
 
@@ -151,7 +77,11 @@ padding: 10px;
     width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background: grey;
+    background: -moz-linear-gradient(45deg, silver, grey);
+    background: -webkit-linear-gradient(45deg, silver, grey);
+    background: -o-linear-gradient(45deg, silver, grey);
+    background: linear-gradient(45deg, silver, grey);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -182,5 +112,5 @@ padding: 10px;
   .faculty-name {
     font-size: 18px;
     font-weight: bold;
-    color: #2196f3;
+    color: #003C71;
   }
