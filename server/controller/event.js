@@ -11,6 +11,7 @@ module.exports.DislayEventlist = async (req, res, next) => {
         // Render the 'list' view with the retrieved Event data
         res.render('event/list', {
             title: 'Events',
+            displayName: req.user ? req.user.displayName:'',
             EventList: EventList
         });
     } catch (err) {
@@ -26,7 +27,8 @@ module.exports.DislayEventlist = async (req, res, next) => {
 module.exports.AddEvent = async (req, res, next) => {
     try {
         res.render('event/add', {
-            title: 'Add Event'
+            title: 'Add Event',
+            displayName: req.user ? req.user.displayName:'',
         });
     } catch (err) {
         console.error(err);
@@ -71,6 +73,7 @@ module.exports.EditEvent = async (req, res, next) => {
         // Render the 'edit' view with the retrieved Event data
         res.render('event/edit', {
             title: 'Edit Event',
+            displayName: req.user ? req.user.displayName:'',
             Event: eventToEdit
         });
     } catch (error) {
