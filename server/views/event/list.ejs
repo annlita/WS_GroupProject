@@ -1,9 +1,12 @@
+<div class = "events">
+
 <% include ../partials/header.ejs %>
 <% include ../partials/main_nav.ejs %>
+
 <main class="container">
     <div class="row">
         <div class="offset-md-0 col-md-10">
-            <div><br> <h1> Events Page </h1> <br></div> 
+            <div> <h1 class="display-4"> Events Page </h1> </div> 
             <% if(typeof displayName=='string' && displayName) { %>
             <a href="/event-list/add" class="btn btn-primary" 
             role="button"><i class="fas fa-plus-circle"></i> Add Event</a>      
@@ -21,10 +24,10 @@
                 <th class="text-center col-4">Description</th>
                 <th class="text-center col-2"></th>
             <% } else { %>
-                <th class="text-center col-2">Name</th>
+                <th class="text-center col-3">Name</th>
                 <th class="text-center col-2">Time</th>
                 <th class="text-center col-2">Date</th>
-                <th class="text-center col-2">Location</th>
+                <th class="text-center col-3">Location</th>
                 <th class="text-center col-5">Description</th>
             <% } %>
             </tr> 
@@ -50,10 +53,10 @@
                     </a>
                 </td>
             <% } else { %>
-                <td class="text-center col-2"><%= EventList[count].Name %></td>
+                <td class="text-center col-3"><%= EventList[count].Name %></td>
                 <td class="text-center col-2"><%= EventList[count].Time %></td>
                 <td class="text-center col-2"><%= EventList[count].Date %></td>
-                <td class="text-center col-2"><%= EventList[count].Location %></td>
+                <td class="text-center col-3"><%= EventList[count].Location %></td>
                 <td class="text-center col-5"><%= EventList[count].Description %></td>
             <% } %>       
             </tr>
@@ -62,5 +65,7 @@
     </div>
     </div>
 </main>
+
 <% include ../partials/bottom_nav.ejs %>
 <% include ../partials/footer.ejs %>
+</div>
