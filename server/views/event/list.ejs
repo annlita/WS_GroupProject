@@ -4,20 +4,34 @@
     <div class="row">
         <div class="offset-md-0 col-md-10">
             <div><br> <h1> Events Page </h1> <br></div> 
+            <% if(typeof displayName=='string' && displayName) { %>
             <a href="/event-list/add" class="btn btn-primary" 
             role="button"><i class="fas fa-plus-circle"></i> Add Event</a>      
-        <br><br>
+        <br>
+        <% } %>
+        <br>
+
         <table class="table table-bordered table-striped table-hover">
             <tr class="d-flex">
+            <% if(typeof displayName=='string' && displayName) { %>
                 <th class="text-center col-2">Name</th>
                 <th class="text-center col-2">Time</th>
                 <th class="text-center col-2">Date</th>
                 <th class="text-center col-2">Location</th>
                 <th class="text-center col-4">Description</th>
                 <th class="text-center col-2"></th>
-            </tr>
+            <% } else { %>
+                <th class="text-center col-2">Name</th>
+                <th class="text-center col-2">Time</th>
+                <th class="text-center col-2">Date</th>
+                <th class="text-center col-2">Location</th>
+                <th class="text-center col-5">Description</th>
+            <% } %>
+            </tr> 
+
             <% for(let count=0;count<EventList.length;count++) { %>    
             <tr class="d-flex">
+            <% if(typeof displayName=='string' && displayName) { %>
                 <td class="text-center col-2"><%= EventList[count].Name %></td>
                 <td class="text-center col-2"><%= EventList[count].Time %></td>
                 <td class="text-center col-2"><%= EventList[count].Date %></td>
@@ -25,7 +39,7 @@
                 <td class="text-center col-4"><%= EventList[count].Description %></td>
                 <td class="text-center col-1">
                     <a href="/event-list/edit/<%= EventList[count]._id %>" 
-                        class="btn btn-primary btn-sm"
+                        class="btn btn-primary btn-sm">
                         <i class="fas fa-pencil-alt"></i> Edit
                     </a>
                 </td>
@@ -35,8 +49,15 @@
                         <i class="fas trash-alt"></i> Delete
                     </a>
                 </td>
+            <% } else { %>
+                <td class="text-center col-2"><%= EventList[count].Name %></td>
+                <td class="text-center col-2"><%= EventList[count].Time %></td>
+                <td class="text-center col-2"><%= EventList[count].Date %></td>
+                <td class="text-center col-2"><%= EventList[count].Location %></td>
+                <td class="text-center col-5"><%= EventList[count].Description %></td>
+            <% } %>       
             </tr>
-            <% } %>
+        <% } %>
         </table>
     </div>
     </div>

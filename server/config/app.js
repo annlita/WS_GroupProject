@@ -5,6 +5,17 @@ let path = require("path"); // Node.js module for working with file paths
 let cookieParser = require("cookie-parser"); // Middleware for parsing cookies
 let logger = require("morgan"); // Logging middleware for HTTP requests
 
+let app = express();
+let session = require('express-session');
+let passport = require('passport');
+let passportLocal = require('passport-local');
+let localStrategy = passportLocal.Strategy;
+let flash = require('connect-flash');
+
+// create a user model instance
+let userModel = require('../models/user');
+let User = userModel.User;
+
 // Configuring MongoDB
 let mongoose = require("mongoose"); // MongoDB ODM (Object-Document Mapper)
 let DB = require("./db"); // Custom module for MongoDB URI
@@ -17,13 +28,29 @@ mongoDB.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
+// Set-up Express-Session
+app.use(session({
+  secret:"SomeSecret",
+  saveUninitialized:false,
+  resave:false
+}));
+// initialize flash-connect
+app.use(flash());
+// implement a user authentication
+passport.use(User.createStrategy());
+// Serialize and Deserialize user information
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser()); 
+// initialize the passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 // Importing route modules
 let indexRouter = require('../routes/index'); // Routes for the root path (localhost:3000)
 let usersRouter = require('../routes/users'); // Routes for user-related paths (localhost:3000/users)
 let eventRouter = require('../routes/event'); // Routes for course-related paths (localhost:3000/course-list)
 
-// Creating an Express application
-let app = express();
+
 
 // Setting up the view engine
 app.set("views", path.join(__dirname, "../views"));
