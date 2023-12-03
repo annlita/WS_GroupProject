@@ -17,7 +17,7 @@
         <table class="table table-bordered table-striped table-hover">
             <tr class="d-flex">
             <% if(typeof displayName=='string' && displayName) { %>
-                <th class="text-center col-2">Name</th>
+                <th class="text-center col-3">Name</th>
                 <th class="text-center col-2">Time</th>
                 <th class="text-center col-2">Date</th>
                 <th class="text-center col-2">Location</th>
@@ -35,7 +35,7 @@
             <% for(let count=0;count<EventList.length;count++) { %>    
             <tr class="d-flex">
             <% if(typeof displayName=='string' && displayName) { %>
-                <td class="text-center col-2"><%= EventList[count].Name %></td>
+                <td class="text-center col-3"><%= EventList[count].Name %></td>
                 <td class="text-center col-2"><%= EventList[count].Time %></td>
                 <td class="text-center col-2"><%= EventList[count].Date %></td>
                 <td class="text-center col-2"><%= EventList[count].Location %></td>
