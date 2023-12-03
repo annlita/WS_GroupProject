@@ -7,17 +7,23 @@ let User = userModel.User;
 
 /* Display home page */
 module.exports.displayHomePage = (req, res, next) => {
-    res.render('index', { title: 'Home' });
+    res.render('index', { title: 'Home' ,      
+      displayName: req.user ? req.user.displayName:''
+  });
   };
 
   /* Display faculties page */
   module.exports.displayFacultiesPage = (req, res, next) => {
-    res.render('index', { title: 'Faculties' });
+    res.render('index', { title: 'Faculties',        
+    displayName: req.user ? req.user.displayName:''
+  });
   };
 
   /* Display feedback page */
   module.exports.displayFeedbackPage = (req, res, next) => {
-    res.render('index', { title: 'Feedback' });
+    res.render('index', { title: 'Feedback',
+    displayName: req.user ? req.user.displayName:''
+  });
   };
 
   module.exports.displayLoginPage = (req, res, next) => {
