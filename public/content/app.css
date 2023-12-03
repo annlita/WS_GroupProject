@@ -11,15 +11,63 @@ background: -o-linear-gradient(top, #F58500, #F55020);
 background: linear-gradient(to top, #F58500, #F55020);
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 margin: 0; 
-height: 2100px;
 }
 
 #home {
-height: 1000px;
+height: 1600px;
 text-align: center;
 font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
 }
+#home h1{
+  color: antiquewhite;
+  
+}
+#home p{
+  color: antiquewhite;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
+#faculty{
+  height: 2000px;
+}
+.faculty-container {
+  width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: grey;
+  background: -moz-linear-gradient(45deg, silver, grey);
+  background: -webkit-linear-gradient(45deg, silver, grey);
+  background: -o-linear-gradient(45deg, silver, grey);
+  background: linear-gradient(45deg, silver, grey);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.faculty-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px; 
+  margin-right: 15px;
+}
+
+.faculty-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #003C71;
+}
+
+.events{
+  height: 1000px !important;
+}
 
 .title {
 height: 80px;
@@ -54,16 +102,6 @@ margin-left:15px;
 }
 
 
-#home h1{
-    color: antiquewhite;
-}
-#home p{
-    color: antiquewhite;
-    font-size: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .navbar
 {background-color: #003C71 !important}
 
@@ -73,44 +111,3 @@ margin-left:15px;
 }
 
 
-.faculty-container {
-    width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: grey;
-    background: -moz-linear-gradient(45deg, silver, grey);
-    background: -webkit-linear-gradient(45deg, silver, grey);
-    background: -o-linear-gradient(45deg, silver, grey);
-    background: linear-gradient(45deg, silver, grey);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #2196f3;
-  }
-  
-  
-  
-  .faculty-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .faculty-member img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px; 
-    margin-right: 15px;
-  }
-  
-  .faculty-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #003C71;
-  }
