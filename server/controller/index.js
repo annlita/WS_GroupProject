@@ -1,5 +1,9 @@
 let express = require('express');
+const passport = require('passport')
 let router = express.Router();
+
+let userModel = require('../models/user');
+let User = userModel.User;
 
 /* Display home page */
 module.exports.displayHomePage = (req, res, next) => {
@@ -33,7 +37,7 @@ module.exports.displayHomePage = (req, res, next) => {
 
 
 module.exports.processLoginPage = (req,res,next) => {
-  passport.authenticate('local',(err,User,info)=> 
+  passport.authenticate('local',(err,user,info)=> 
   {
       // server error
       if(err)
@@ -41,18 +45,18 @@ module.exports.processLoginPage = (req,res,next) => {
         return next(err);
       }
       // login error
-      if(!User)
+      if(!user)
       {
         req.flash('loginMessage',
         'AuthenticationError');
         return res.redirect('/login')
       }
-      req.login(User,(err)=>{
+      req.login(user,(err)=>{
         if(err)
         {
           return next(err)
         }
-        return res.redirect('/course-list');
+        return res.redirect('/event-list');
       })
   })(req,res,next)
 }
@@ -87,24 +91,27 @@ module.exports.processRegisterPage = (req,res,next) => {
       {
         req.flash('registerMessage',
         'Registration Error : User already Exist'
-      )}
+      );}
       return res.render('auth/register',
       {
         title:'Register',
         message: req.flash('registerMessage'),
         displayName: req.user ? req.user.displayName:''
-      })
+      });
     }
     else{
       return passport.authenticate('local')(req,res,()=>{
-        res.redirect('/course-list');
+        res.redirect('/event-list');
       })
     }
   })
 }
 
 module.exports.performLogoutPage = (req, res, next) => {
-  req.logout();
-  res.redirect('/')
+  req.logout(function(err){
+    if(err){
+      return next(err)
+    }
+  });
+  res.redirect('/');
 }
-
