@@ -1,0 +1,16 @@
+#forms {
+    text-align: center;
+    float: center;
+    height: 1100px;
+    margin-right: 300px; 
+    margin-left: 300px;
+    margin-bottom: 200px;
+    background: grey;
+    background: -moz-linear-gradient(45deg, silver, grey);
+    background: -webkit-linear-gradient(45deg, silver, grey);
+    background: -o-linear-gradient(45deg, silver, grey);
+    background: linear-gradient(45deg, silver, grey);
+    font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }

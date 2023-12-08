@@ -1,0 +1,35 @@
+#faculty{
+    height: 2000px;
+  }
+  .faculty-container {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: grey;
+    background: -moz-linear-gradient(45deg, silver, grey);
+    background: -webkit-linear-gradient(45deg, silver, grey);
+    background: -o-linear-gradient(45deg, silver, grey);
+    background: linear-gradient(45deg, silver, grey);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faculty-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .faculty-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-right: 15px;
+  }
+  
+  .faculty-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003C71;
+  }

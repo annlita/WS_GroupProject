@@ -1,0 +1,15 @@
+#home {
+    height: 1600px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
+    }
+    #home h1{
+      color: antiquewhite;
+      
+    }
+    #home p{
+      color: antiquewhite;
+      font-size: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }

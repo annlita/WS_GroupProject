@@ -1,1 +1,51 @@
-<p>feedback works!</p>
+<main class="container">
+<div> <h1 class="display-4"> Feedback Page </h1> </div>
+</main>
+<div id = "forms"> <!--Defining form-->
+<br><h1>Reach out to Us!</h1>
+<form action="mailto:heremela.sitotaw@ontariotechu.net" method="post" enctype="text/plain" name="form"> 
+    
+    <!-- Feedback Form -->
+        <!-- Name Input Field -->
+        <p><br>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name here" size="50" required> </p>
+
+        <!-- Student ID Input Field -->
+        <p><br><br><br><label for="studentId">Student ID: </label>
+        <input type="text" id="studentId" name="studentId" placeholder="Enter your Student ID here" size="45" required></p>
+
+        <!-- Email Input Field -->
+        <p><br><br><br><label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email here" size="50" required></p>
+
+        <!-- Faculty Selection Field -->
+        <p><br><br><br>
+        <label for = "faculty">Select your Faculty:</label>
+        <select name="faculty" required>
+        <option value="Select your Faculty">Select your Faculty</option>
+        <option value="Faculty of Business and IT">Faculty of Business and IT</option>
+        <option value="Faculty of Health Science">Faculty of Health Science</option>
+        <option value="Faculty of Engineering and Applied Science">Faculty of Engineering and Applied Science</option>
+        <option value="Faculty of Science">Faculty of Science</option>
+        <option value="Faculty of Social Science and Humanities">Faculty of Social Science and Humanities</option>
+        <option value="Faculty of Education">Faculty of Education</option>
+        </select>
+        </p>
+
+        <!-- Question/Suggestion Textarea -->
+        <p><br><br><br><label for="questionSuggestion">Question/Suggestion:</label><br><br>
+        <textarea name="questionSuggestion" cols= "60" rows="8" placeholder="Any Questions or Suggestions" required></textarea></p>
+
+        <!-- Verification Checkbox -->
+        <p><br><br><br>
+        <input type = "checkbox" name = "robot" required>
+        <label for = "robot">I am not a robot!</label></p>
+
+        <p><br><br><br>
+        <input type ="submit" value="Submit"/> 
+        <input type ="reset" value="Reset"/></p> 
+        <!--Submit and Reset button-->
+    </form>
+    </div>
+

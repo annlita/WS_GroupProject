@@ -1,1 +1,40 @@
-<p>events works!</p>
+<div class = "events">
+
+    <main class="container">
+        <div class="row">
+            <div class="offset-md-0 col-md-10">
+                <div> <h1 class="display-4"> Events Page </h1> </div> 
+                
+            <br>
+    
+            <table class="table table-bordered table-striped table-hover">
+                <tr class="d-flex">
+         
+                    <th class="text-center col-3">Name</th>
+                    <th class="text-center col-2">Time</th>
+                    <th class="text-center col-2">Date</th>
+                    <th class="text-center col-3">Location</th>
+                    <th class="text-center col-5">Description</th>
+             
+                </tr> 
+    
+                 
+                <tr class="d-flex">
+        
+           
+                    <td class="text-center col-3"><%= EventList[count].Name %></td>
+                    <td class="text-center col-2"><%= EventList[count].Time %></td>
+                    <td class="text-center col-2"><%= EventList[count].Date %></td>
+                    <td class="text-center col-3"><%= EventList[count].Location %></td>
+                    <td class="text-center col-5"><%= EventList[count].Description %></td>
+                 
+                </tr>
+            
+            </table>
+        </div>
+        </div>
+    </main>
+    
+    <% include ../partials/bottom_nav.ejs %>
+    <% include ../partials/footer.ejs %>
+    </div>

@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #F55020;
+    background: -moz-linear-gradient(top, #F58500, #F55020);
+    background: -webkit-linear-gradient(top, #F58500, #F55020);
+    background: -o-linear-gradient(top, #F58500, #F55020);
+    background: linear-gradient(to top, #F58500, #F55020);
+    font-family: Georgia, 'Times New Roman', Verdana, Geneva, Arial, sans-serif;
+    margin: 0; 
+    }
+
+.container {
+    font-family: Cambria, Verdana, Geneva, Arial, sans-serif;
+    color: black;
+    }
+
+h1,h2,h3,h4,h5,h6,li {
+    margin-left:15px;
+    }
+        
+        
+.clear {
+    clear: both;
+    }
+
 .navbar
 {background-color: #003C71 !important}
 
